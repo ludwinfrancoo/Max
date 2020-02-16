@@ -19,7 +19,6 @@ font-family: 'Spinnaker', sans-serif; SUBTITULOS
 .fondo{
 	background: url("https://i.pinimg.com/originals/9b/af/b4/9bafb4844ae8ddd813446b29d88fa535.jpg");
 	background-size: cover no-repeat;
-
 }
 .regis{
 	font-family: 'Concert One', cursive;
@@ -30,4 +29,10 @@ font-family: 'Spinnaker', sans-serif; SUBTITULOS
 	font-family: 'Concert One', cursive;
 	font-size: 20px;
 	text-shadow: 4px 4px 4px grey;
+}
+
+.ingresos{
+	font-family: 'Spinnaker', sans-serif;
+	text-shadow: 4px 4px 4px grey;
+	color: black;
 }

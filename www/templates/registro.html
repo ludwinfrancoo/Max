@@ -10,11 +10,11 @@
 			<div class="list">
 			  <label class="item item-input">
 			    <span class="input-label ini">Correo </span>
-			    <input type="text">
+			    <input type="text" ng-model="usuario.correo" class="ingresos">
 			  </label>
 			  <label class="item item-input">
 			    <span class="input-label ini">Contraseña </span>
-			    <input type="password">
+			    <input type="password" ng-model="usuario.contra" class="ingresos">
 			  </label>
 			</div>
 		</div>	
@@ -22,7 +22,7 @@
 	<br>
 	<div class="row centrado">
 		<div class="col-md centrado">
-			<button class="button regis">
+			<button class="button regis" ng-click="obtener(usuario)">
 			  REGISTRAR
 			</button>
 		</div>

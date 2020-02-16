@@ -9,11 +9,26 @@ var firebaseConfig = {
     appId: "1:567029314884:web:cc3bd06f82cee91f81d311",
     measurementId: "G-YPEQZ7J80N"
   };
+    // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 angular.module('starter.controllers', [])
 
 .controller("registro", function($scope, $rootScope){
-
+  $scope.obtener = function(usuario){
+    firebase.auth().createUserWithEmailAndPassword(usuario.correo, usuario.contra).then(function listo(x){
+      swal("Listo", "Usuario Restrado con Exito", "success", {
+        button: "Entendido",
+      });
+    }).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      swal("Algo salio mal", error.message, "error", {
+        button: "Entendido",
+      });
+    });
+  }
 })
 
 .controller('DashCtrl', function($scope) {})
